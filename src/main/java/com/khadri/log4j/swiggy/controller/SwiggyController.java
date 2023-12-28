@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.khadri.log4j.swiggy.aspect.SwiggyInOut;
 import com.khadri.log4j.swiggy.model.PlaceOrderRequest;
 import com.khadri.log4j.swiggy.model.PlaceOrderResponse;
 import com.khadri.log4j.swiggy.service.SwiggyService;
@@ -20,6 +21,7 @@ public class SwiggyController {
 	private SwiggyService swiggyService;
 
 	@PostMapping("/order/place")
+	@SwiggyInOut(request = "#args[0]")
 	public ResponseEntity<PlaceOrderResponse> userRequest(@RequestBody PlaceOrderRequest placeOrderRequest) {
 
 		PlaceOrderResponse orderSuccess = swiggyService.orderSuccess(placeOrderRequest);

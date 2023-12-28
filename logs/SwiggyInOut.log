@@ -1,0 +1,27 @@
+2023-12-28 10:08:36.064 [http-nio-9090-exec-1] INFO  swiggy.logger - {
+  "itemName" : "Cake",
+  "itemQty" : 2,
+  "user" : {
+    "mobileNo" : 2344234,
+    "doorNo" : 12,
+    "streetName" : "NGO",
+    "landMark" : "Near temple"
+  }
+}
+2023-12-28 10:08:36.094 [http-nio-9090-exec-1] INFO  swiggy.logger - {
+  "headers" : { },
+  "body" : {
+    "itemName" : "Cake",
+    "itemQty" : 2,
+    "user" : {
+      "mobileNo" : 2344234,
+      "doorNo" : 12,
+      "streetName" : "NGO",
+      "landMark" : "Near temple"
+    },
+    "totalCost" : 200.0,
+    "orderId" : "2d0e7421-b26b-4759-ad51-600aa00d3ac4"
+  },
+  "statusCode" : "CREATED",
+  "statusCodeValue" : 201
+}
